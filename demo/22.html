@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<style>
+	 .gr{background: none repeat scroll 0 0 rgba(0, 0, 0, 0.3);cursor: pointer;display: none;height: 100%;left: 0;position: fixed;top: 0;width: 100%;z-index: 100;}
+     .aa{background: red;width: 200px;height: 200px;margin-left:-100px;margin-top:-80px;position: absolute;left:50%;top:50%;z-index: 100}
+	</style>
+</head>
+<body>
+	<a class="newWindow">点击我</a>
+	<div class="gr" style="display:none">
+	  <div class="aa" >
+	  	 <ul>
+	  	 	<li><a>数据1</a></li>
+	  	 	<li><a>数据2</a></li>
+	  	 	<li><a>数据3</a></li>
+	  	 </ul>
+	  </div>
+
+	</div>
+</body>
+</html>
+<script type="text/javascript">
+    
+ 
+    $(document).ready(function(){
+        $('.newWindow').click(function (event){
+            $(".gr").toggle('show');
+           
+        });
+    });
+</script>
+
